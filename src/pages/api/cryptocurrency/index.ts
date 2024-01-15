@@ -10,7 +10,7 @@ export default async function handler(
       "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
       {
         headers: {
-          "X-CMC_PRO_API_KEY": process.env["X-CMC_PRO_API_KEY"],
+          "X-CMC_PRO_API_KEY": process.env.API_KEY,
         },
       }
     );
