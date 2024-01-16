@@ -1,6 +1,6 @@
 import { useGetCryptoAssetsQuery } from "@/shared/redux/cryptocurrency";
 import { ICryuptoCurrency } from "@/shared/types/CryptoAsset";
-import { Box, IconButton, Typography } from "@mui/material";
+import { Box, IconButton, Tooltip, Typography } from "@mui/material";
 import {
   DataGrid,
   GridColDef,
@@ -10,8 +10,10 @@ import {
   GridToolbar,
 } from "@mui/x-data-grid";
 import { useState } from "react";
-import DetailsIcon from "@mui/icons-material/Details";
+import AddCardIcon from "@mui/icons-material/AddCard";
+import SettingsIcon from "@mui/icons-material/Settings";
 import { useRouter } from "next/router";
+import { AddWalletModal } from "@/components/AddWalletModal";
 
 const SLOTS_PROPS = {
   toolbar: {
@@ -36,6 +38,7 @@ const convertData = (data: ICryuptoCurrency[]) =>
       dateAdded: new Date(el.date_added).toLocaleDateString("pt-BR"),
       lastUpdate: new Date(el.last_updated).toLocaleDateString("pt-BR"),
       index: index,
+      price: el.quote["USD"].price,
     };
   });
 
@@ -46,22 +49,53 @@ function CryptocurrencyList() {
     pageSize: 10,
   });
   const { data, isFetching } = useGetCryptoAssetsQuery();
+  const [open, setOpen] = useState<boolean>(false);
+  const [coinName, setCoinName] = useState<string>("");
+  const [price, setPrice] = useState<number>(0);
 
+  function handleClose() {
+    setOpen(!open);
+  }
   const rows: GridRowsProp = data?.data ? convertData(data.data) : [];
 
   function renderActionsCell(row: GridRenderCellParams) {
     return (
-      <IconButton
-        color="secondary"
-        aria-label="delete"
-        onClick={() => router.push(`/cryptocurrency/${row.id}`)}
-      >
-        <DetailsIcon />
-      </IconButton>
+      <>
+        <Tooltip title="Datails" arrow>
+          <IconButton
+            color="secondary"
+            aria-label="delete"
+            onClick={() => router.push(`/cryptocurrency/${row.id}`)}
+          >
+            <SettingsIcon />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="Add on your Wallet" arrow>
+          <IconButton
+            color="secondary"
+            aria-label="Add Wallet"
+            onClick={() => {
+              setCoinName(row.row.name);
+              setPrice(row.row.price);
+              handleClose();
+            }}
+          >
+            <AddCardIcon />
+          </IconButton>
+        </Tooltip>
+
+        {open && (
+          <AddWalletModal
+            handleClose={handleClose}
+            open={open}
+            coinName={coinName}
+            price={price}
+          />
+        )}
+      </>
     );
   }
   const columns: GridColDef[] = [
-    { field: "id", headerName: "Id", flex: 1 },
     { field: "name", headerName: "Name", flex: 1 },
     { field: "dateAdded", headerName: "Add At", flex: 1 },
     { field: "lastUpdate", headerName: "Updated At", flex: 1 },
@@ -69,7 +103,7 @@ function CryptocurrencyList() {
     { field: "symbol", headerName: "Symbol", flex: 1 },
     {
       field: "index",
-      headerName: "Details",
+      headerName: "Actions",
       type: "string",
       flex: 1,
       renderCell: renderActionsCell,

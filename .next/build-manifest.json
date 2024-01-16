@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/-hbSaNIqpGHOaApqFrYXH/_buildManifest.js",
-    "static/-hbSaNIqpGHOaApqFrYXH/_ssgManifest.js"
+    "static/fGjCI-v7wa_EJtCaBNYcu/_buildManifest.js",
+    "static/fGjCI-v7wa_EJtCaBNYcu/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -14,16 +14,16 @@
       "static/chunks/webpack-87b3a303122f2f0d.js",
       "static/chunks/framework-5429a50ba5373c56.js",
       "static/chunks/main-fdf56fc4602be5bb.js",
-      "static/chunks/350-8e7113e0b1465789.js",
-      "static/chunks/291-ce27cbbc9b3b6f3a.js",
-      "static/chunks/pages/index-b0979c06034dc5cb.js"
+      "static/chunks/664-1f4427786a15f2a2.js",
+      "static/chunks/120-63b48fc81403fbd2.js",
+      "static/chunks/pages/index-ad3df764f30c7bbf.js"
     ],
     "/_app": [
       "static/chunks/webpack-87b3a303122f2f0d.js",
       "static/chunks/framework-5429a50ba5373c56.js",
       "static/chunks/main-fdf56fc4602be5bb.js",
       "static/css/a0cf2e4338725801.css",
-      "static/chunks/pages/_app-f8d5c1fe89fc6078.js"
+      "static/chunks/pages/_app-a6d3698299eda5da.js"
     ],
     "/_error": [
       "static/chunks/webpack-87b3a303122f2f0d.js",
@@ -35,23 +35,26 @@
       "static/chunks/webpack-87b3a303122f2f0d.js",
       "static/chunks/framework-5429a50ba5373c56.js",
       "static/chunks/main-fdf56fc4602be5bb.js",
-      "static/chunks/350-8e7113e0b1465789.js",
-      "static/chunks/291-ce27cbbc9b3b6f3a.js",
-      "static/chunks/pages/cryptocurrency-6b474982fdca2d7e.js"
+      "static/chunks/664-1f4427786a15f2a2.js",
+      "static/chunks/120-63b48fc81403fbd2.js",
+      "static/chunks/771-b511698b7446195a.js",
+      "static/chunks/652-25baf3ce0e553277.js",
+      "static/chunks/pages/cryptocurrency-e85093f5015a290a.js"
     ],
     "/cryptocurrency/[id]": [
       "static/chunks/webpack-87b3a303122f2f0d.js",
       "static/chunks/framework-5429a50ba5373c56.js",
       "static/chunks/main-fdf56fc4602be5bb.js",
-      "static/chunks/350-8e7113e0b1465789.js",
-      "static/chunks/160-dd5ae22978e481ba.js",
-      "static/chunks/pages/cryptocurrency/[id]-4c7709659f241dac.js"
+      "static/chunks/664-1f4427786a15f2a2.js",
+      "static/chunks/771-b511698b7446195a.js",
+      "static/chunks/pages/cryptocurrency/[id]-7652a5a17637e9d0.js"
     ],
     "/wallet": [
       "static/chunks/webpack-87b3a303122f2f0d.js",
       "static/chunks/framework-5429a50ba5373c56.js",
       "static/chunks/main-fdf56fc4602be5bb.js",
-      "static/chunks/pages/wallet-6ee62a06e5cc8cfc.js"
+      "static/chunks/664-1f4427786a15f2a2.js",
+      "static/chunks/pages/wallet-ed3f00adb30ac0b1.js"
     ]
   },
   "ampFirstPages": []
