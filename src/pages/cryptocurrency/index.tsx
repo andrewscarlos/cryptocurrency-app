@@ -40,12 +40,12 @@ const convertData = (data: ICryuptoCurrency[]) =>
   });
 
 function CryptocurrencyList() {
-  const { data, isFetching } = useGetCryptoAssetsQuery();
   const router = useRouter();
   const [pagination, setPagination] = useState<GridPaginationModel>({
     page: 0,
     pageSize: 10,
   });
+  const { data, isFetching } = useGetCryptoAssetsQuery();
 
   const rows: GridRowsProp = data?.data ? convertData(data.data) : [];
 

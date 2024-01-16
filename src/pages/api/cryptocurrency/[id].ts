@@ -6,7 +6,6 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
-    console.log("req.query.id", req.query.id);
     const response = await axios.get(
       `https://pro-api.coinmarketcap.com/v2/cryptocurrency/info?id=${req.query.id}`,
       {
