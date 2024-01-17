@@ -25,13 +25,13 @@ const convertData = (data: ICryuptoCurrency[]) =>
     };
   });
 
+export const GRID_INITIL_STATE: GridInitialStateCommunity = {
+  pagination: {
+    paginationModel: { pageSize: 10, page: 0 },
+  },
+};
 export default function Home() {
   const { data, isFetching } = useGetByPriceQuery();
-  const GRID_INITIL_STATE: GridInitialStateCommunity = {
-    pagination: {
-      paginationModel: { pageSize: 10, page: 0 },
-    },
-  };
   const rows: GridRowsProp = data?.data ? convertData(data.data) : [];
 
   const columns: GridColDef[] = [

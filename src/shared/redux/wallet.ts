@@ -34,6 +34,20 @@ export const walletSlice = createSlice({
       state.money -= action.payload;
       saveStateToLocalStorage(state);
     },
+    addCryptoCurrency: (state, action) => {
+      const { coinName, value } = action.payload;
+      console.log("value", value);
+      const newCryptoCurrency = {
+        coinName,
+        value,
+        id: state.cryptoCurrency.length,
+      };
+
+      state.cryptoCurrency.push(newCryptoCurrency);
+      state.money -= value;
+
+      saveStateToLocalStorage(state);
+    },
 
     loadMoneyFromLocalStorage: (state, action) => {
       const loadedState = loadStateFromLocalStorage();
@@ -44,8 +58,12 @@ export const walletSlice = createSlice({
   },
 });
 
-export const { addMoney, removeMoney, loadMoneyFromLocalStorage } =
-  walletSlice.actions;
+export const {
+  addMoney,
+  removeMoney,
+  loadMoneyFromLocalStorage,
+  addCryptoCurrency,
+} = walletSlice.actions;
 
 export const selectWallet = (state: RootState) => state.wallet;
 
