@@ -1,3 +1,4 @@
+import React from "react";
 import { useAppDispatch, useAppSelector } from "@/shared/redux/hooks";
 import { addCryptoCurrency, selectWallet } from "@/shared/redux/wallet";
 import {
@@ -48,7 +49,7 @@ export function AddWalletModal({
 }: IAddWalletModalProps) {
   const money = useAppSelector(selectWallet);
   const dispatch = useAppDispatch();
-  
+
   const { enqueueSnackbar } = useSnackbar();
   const [coinValue, setCoinValue] = useState<string>("");
   const [myMoneyInWallet, setMyMoneyInWallet] = useState<number>(0);
