@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/ZNp3Qx2IAjKccB-IB9sHQ/_buildManifest.js",
-    "static/ZNp3Qx2IAjKccB-IB9sHQ/_ssgManifest.js"
+    "static/GF38A_R9b7X9gE6GPB-wH/_buildManifest.js",
+    "static/GF38A_R9b7X9gE6GPB-wH/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -57,7 +57,7 @@
       "static/chunks/350-a9d34426b89ec496.js",
       "static/chunks/120-d99c15b66d71a3a0.js",
       "static/chunks/886-ab7f5a00d8741ef7.js",
-      "static/chunks/pages/wallet-ab03e1dd7acc8d00.js"
+      "static/chunks/pages/wallet-07ee680e38890580.js"
     ]
   },
   "ampFirstPages": []

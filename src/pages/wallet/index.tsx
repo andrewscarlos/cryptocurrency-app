@@ -101,16 +101,17 @@ function Wallet() {
           </Box>
         </Box>
       </Paper>
-
-      <Box mt={5}>
-        <DataGrid
-          rows={currencies}
-          columns={columns}
-          initialState={GRID_INITIL_STATE}
-          disableRowSelectionOnClick
-          loading={isFetching}
-        />
-      </Box>
+      {currencies.length > 0 && (
+        <Box mt={5}>
+          <DataGrid
+            rows={currencies}
+            columns={columns}
+            initialState={GRID_INITIL_STATE}
+            disableRowSelectionOnClick
+            loading={isFetching}
+          />
+        </Box>
+      )}
     </Box>
   );
 }
