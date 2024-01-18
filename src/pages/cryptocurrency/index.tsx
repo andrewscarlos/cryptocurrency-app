@@ -1,3 +1,4 @@
+import React from "react";
 import { useGetCryptoAssetsQuery } from "@/shared/redux/cryptocurrency";
 import { ICryuptoCurrency } from "@/shared/types/CryptoAsset";
 import { Box, IconButton, Tooltip, Typography } from "@mui/material";

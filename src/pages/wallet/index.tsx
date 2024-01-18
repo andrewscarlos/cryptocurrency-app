@@ -1,3 +1,4 @@
+import React from "react";
 import { useAppSelector, useAppDispatch } from "@/shared/redux/hooks";
 import { selectWallet, addMoney } from "@/shared/redux/wallet";
 import {
@@ -28,7 +29,7 @@ function Wallet() {
     setIsFetching(false);
   }, [money]);
 
-  console.log("currencies", money);
+  
   const handleAddMoney = () => {
     const amounted = parseFloat(addAmount);
     if (!isNaN(amounted)) {

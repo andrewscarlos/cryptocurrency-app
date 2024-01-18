@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/GF38A_R9b7X9gE6GPB-wH/_buildManifest.js",
-    "static/GF38A_R9b7X9gE6GPB-wH/_ssgManifest.js"
+    "static/-zyvd4XJRRDRsBbMqjEqv/_buildManifest.js",
+    "static/-zyvd4XJRRDRsBbMqjEqv/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -16,14 +16,14 @@
       "static/chunks/main-808080c244955c4e.js",
       "static/chunks/350-a9d34426b89ec496.js",
       "static/chunks/120-d99c15b66d71a3a0.js",
-      "static/chunks/pages/index-7ebd3cd9ea7f696f.js"
+      "static/chunks/pages/index-1682e5d1bcf4307b.js"
     ],
     "/_app": [
       "static/chunks/webpack-895d81ad11017463.js",
       "static/chunks/framework-5429a50ba5373c56.js",
       "static/chunks/main-808080c244955c4e.js",
       "static/css/a0cf2e4338725801.css",
-      "static/chunks/pages/_app-e82c55352925aaf2.js"
+      "static/chunks/pages/_app-d012e26d0e935fe4.js"
     ],
     "/_error": [
       "static/chunks/webpack-895d81ad11017463.js",
@@ -39,7 +39,7 @@
       "static/chunks/120-d99c15b66d71a3a0.js",
       "static/chunks/886-ab7f5a00d8741ef7.js",
       "static/chunks/368-4b56c8b00780a14f.js",
-      "static/chunks/pages/cryptocurrency-74f772dc6dda2fc3.js"
+      "static/chunks/pages/cryptocurrency-c684c719e4a14d05.js"
     ],
     "/cryptocurrency/[id]": [
       "static/chunks/webpack-895d81ad11017463.js",
@@ -48,7 +48,7 @@
       "static/chunks/350-a9d34426b89ec496.js",
       "static/chunks/886-ab7f5a00d8741ef7.js",
       "static/chunks/873-eefabc72a40d19a5.js",
-      "static/chunks/pages/cryptocurrency/[id]-1c7ea6dc81407d6a.js"
+      "static/chunks/pages/cryptocurrency/[id]-1a14e3c4f81bf9ab.js"
     ],
     "/wallet": [
       "static/chunks/webpack-895d81ad11017463.js",
@@ -57,7 +57,7 @@
       "static/chunks/350-a9d34426b89ec496.js",
       "static/chunks/120-d99c15b66d71a3a0.js",
       "static/chunks/886-ab7f5a00d8741ef7.js",
-      "static/chunks/pages/wallet-07ee680e38890580.js"
+      "static/chunks/pages/wallet-aabd233e493251ed.js"
     ]
   },
   "ampFirstPages": []

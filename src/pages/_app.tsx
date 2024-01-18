@@ -1,3 +1,4 @@
+import React from "react";
 import { Layout } from "@/components/Layout";
 import { store } from "@/shared/redux/store";
 import "@/styles/globals.css";

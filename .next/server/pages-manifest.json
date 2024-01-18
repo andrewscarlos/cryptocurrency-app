@@ -1,12 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/api/cryptocurrency/[id]": "pages/api/cryptocurrency/[id].js",
-  "/api/cryptocurrency/getByPrice": "pages/api/cryptocurrency/getByPrice.js",
-  "/api/cryptocurrency": "pages/api/cryptocurrency.js",
-  "/cryptocurrency/[id]": "pages/cryptocurrency/[id].js",
-  "/cryptocurrency": "pages/cryptocurrency.js",
-  "/wallet": "pages/wallet.js",
-  "/": "pages/index.js"
-}
+{"/_app":"pages/_app.js","/_error":"pages/_error.js","/_document":"pages/_document.js","/api/cryptocurrency/[id]":"pages/api/cryptocurrency/[id].js","/api/cryptocurrency/getByPrice":"pages/api/cryptocurrency/getByPrice.js","/api/cryptocurrency":"pages/api/cryptocurrency.js","/cryptocurrency/[id]":"pages/cryptocurrency/[id].html","/cryptocurrency":"pages/cryptocurrency.html","/wallet":"pages/wallet.html","/":"pages/index.html","/404":"pages/404.html"}

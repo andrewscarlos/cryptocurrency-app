@@ -1,3 +1,4 @@
+import React from "react";
 import { useGetCryptoAssetsByIdQuery } from "@/shared/redux/cryptocurrency";
 import { CryptoCurrencyDetails } from "@/shared/types/CryptoCurrency.details";
 import {

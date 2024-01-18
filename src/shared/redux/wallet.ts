@@ -36,7 +36,7 @@ export const walletSlice = createSlice({
     },
     addCryptoCurrency: (state, action) => {
       const { coinName, value } = action.payload;
-      console.log("value", value);
+
       const newCryptoCurrency = {
         coinName,
         value,
